@@ -83,13 +83,30 @@ console.log('La somma del peso totale delle zucchine è:' + sommaPesoTotale );
 
 //2b. creo due array per dividere le zucchine che misurano meno o più di 15cm
 var zucchineGrandi = [];
-console.log(zucchineGrandi);
 var zucchinePiccole = [];
-console.log(zucchinePiccole);
 
-//2c. creo due array per dividere quanto pesano i due gruppi di zucchine
+//2c. creo due array per dividere quanto pesano i due gruppi di zucchine (grandie piccole)
 var pesoZucchineGrandi = 0;
-console.log(pesoZucchineGrandi)
 var pesoZucchinePiccole = 0;
-console.log(pesoZucchinePiccole)
+
+//2d. creo un ciclo for 
+for ( i = 0; i < arrayZucchine.length; i++ ) {
+    var thisZucchina = arrayZucchine[i];
+    //2e. se la lunghezza della zucchina è piu grande di 15 la aggiungo alle zucchine grandi
+    if ( thisZucchina.lunghezza > 15 ) {
+        zucchineGrandi.push(thisZucchina);
+        //2g. prendo i pesi di ogni zuchina grande e li sommo per avere il peso delle zucchine grandi
+        pesoZucchineGrandi = pesoZucchineGrandi + thisZucchina.peso;
+
+    //2f. se la lunghezza della zucchina è piu piccola di 15 la aggiungo alle zucchine piccole
+    } else if ( thisZucchina.lunghezza < 15 ) {
+        zucchinePiccole.push(thisZucchina);
+        //2h. prendo i pesi di ogni zucchina piccola e li sommo per avere il peso delle zucchine piccole
+        pesoZucchinePiccole = pesoZucchinePiccole + thisZucchina.peso;
+    }
+}
+
+//3a. stampo le zucchine che misurano più o meno di 15 nei due array 
+console.log(zucchineGrandi);
+console.log(zucchinePiccole);
 
