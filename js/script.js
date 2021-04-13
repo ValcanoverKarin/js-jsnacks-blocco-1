@@ -4,7 +4,7 @@
 //   Dividi in due array separati le zucchine che misurano meno o più di 15cm. 
 //3. Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 
-//1a. creo 10 oggetti con varietà peso e lunghezza in un array 
+//1a/2a. creo 10 oggetti con varietà peso e lunghezza in un array 
 var arrayZucchine = [
     {
         //zucchina 0
@@ -80,3 +80,16 @@ for ( i = 0; i < arrayZucchine.length; i++ ) {
 }
 
 console.log('La somma del peso totale delle zucchine è:' + sommaPesoTotale );
+
+//2b. creo due array per dividere le zucchine che misurano meno o più di 15cm
+var zucchineGrandi = [];
+console.log(zucchineGrandi);
+var zucchinePiccole = [];
+console.log(zucchinePiccole);
+
+//2c. creo due array per dividere quanto pesano i due gruppi di zucchine
+var pesoZucchineGrandi = 0;
+console.log(pesoZucchineGrandi)
+var pesoZucchinePiccole = 0;
+console.log(pesoZucchinePiccole)
+
