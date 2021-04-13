@@ -69,7 +69,7 @@ var arrayZucchine = [
 ];
 console.log(arrayZucchine);
 
-//1b. imposto la il totale della somma dei pesi a 0 per sommare il peso di ogni zuchhina
+//1b. imposto il totale della somma dei pesi a 0 per sommare il peso di ogni zuchhina
 var sommaPesoTotale = 0;
 
 //1c. creo un ciclo for 
@@ -85,7 +85,7 @@ console.log('La somma del peso totale delle zucchine è:' + sommaPesoTotale );
 var zucchineGrandi = [];
 var zucchinePiccole = [];
 
-//2c. creo due array per dividere quanto pesano i due gruppi di zucchine (grandie piccole)
+//2c. imposto il totale della somma del peso delle zucchine piccole e grandi a zero per sommare poi il peso delle rispettive zucchine
 var pesoZucchineGrandi = 0;
 var pesoZucchinePiccole = 0;
 
@@ -110,3 +110,6 @@ for ( i = 0; i < arrayZucchine.length; i++ ) {
 console.log(zucchineGrandi);
 console.log(zucchinePiccole);
 
+//3b. stampo la somma del peso delle zucchine grandi e piccole 
+console.log('La somma del peso delle zucchine grandi è:' + pesoZucchineGrandi)
+console.log('La somma del peso delle zucchine piccole è:' + pesoZucchinePiccole)
